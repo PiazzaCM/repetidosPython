@@ -8,9 +8,17 @@ lista1 = [1, 2, 2, 3, 2, 1]
 lista2 = [1, 2, 2, 2, 3, 2, 1]
 
 def quitar(lista):
-    return list(set(lista))
+
+    return list(set(lista)) #set quita los repetidos
+
 print(quitar(lista1))
 
 def repetidos(lista):
-    return {i: lista.count(i) for i in lista}
+    
+    return {n: lista.count(n) for n in lista} #cuenta cuantos repetidos hay
+
 print(repetidos(lista2))
+
+#count cuenta cuantos repetidos hay
+#set quita los repetidos
+#list convierte el set en lista
